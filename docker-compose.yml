@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.24.0
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    name: ${NETWORK_NAME}
+    external: true
