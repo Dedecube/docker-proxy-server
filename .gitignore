@@ -1,0 +1,4 @@
+nginx/conf.d/*
+certs/*
+!.gitkeep
+.env
