@@ -9,6 +9,7 @@ services:
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./etc/ssl/certs:/certs
+      - ./var/log/nginx:/var/log/nginx
     networks:
       - proxy-net
 
